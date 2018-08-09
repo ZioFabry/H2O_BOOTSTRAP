@@ -7,10 +7,10 @@ if [ ! -f h2o.conf ]; then
 	exit
 fi
 
-# if [ $(ps -ef|grep h2od|grep -v grep|wc -l) -ne 0 ]; then
-# 	echo "*** h2od is running, please stop with 'h2o-cli stop'"
-# 	exit
-# fi
+if [ $(ps -ef|grep h2od|grep -v grep|wc -l) -ne 0 ]; then
+	echo "*** h2od is running, please stop with 'h2o-cli stop'"
+ 	exit
+fi
 
 echo "Download Bootstrap..."
 rm -f H2O_BOOTSTRAP.tgz
