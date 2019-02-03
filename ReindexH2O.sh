@@ -15,7 +15,7 @@ fi
 echo "Download Bootstrap..."
 rm -f H2O_BOOTSTRAP.tgz
 
-curl https://raw.githubusercontent.com/ZioFabry/H2O_BOOTSTRAP/master/H2O_BOOTSTRAP.tgz --output H2O_BOOTSTRAP.tgz
+curl https://github.com/ZioFabry/H2O_BOOTSTRAP/raw/master/H2O_BOOTSTRAP.tgz --output H2O_BOOTSTRAP.tgz
 
 if [ $? -ne 0 ]; then
 	echo "*** error download bootstrap file"
